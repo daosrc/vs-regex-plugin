@@ -1,0 +1,54 @@
+{
+  "name": "vscode-regex-plugin",
+  "displayName": "Regex Plugin",
+  "description": "A VSCode plugin for managing and validating regular expressions",
+  "version": "0.0.1",
+  "keywords": [
+    "vscode",
+    "typescript",
+    "regexp",
+    "regular expressions",
+    "正则"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-regex-plugin.showRegexList",
+    "onCommand:vscode-regex-plugin.validateRegex",
+    "onCommand:vscode-regex-plugin.testRegex"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-regex-plugin.showRegexList",
+        "title": "Regex: Show Predefined List"
+      },
+      {
+        "command": "vscode-regex-plugin.validateRegex",
+        "title": "Regex: Validate Expression"
+      },
+      {
+        "command": "vscode-regex-plugin.testRegex",
+        "title": "Regex: Test Expression"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.0.2"
+  }
+}
