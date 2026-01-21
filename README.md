@@ -1,6 +1,6 @@
 # VSCode Regex Plugin
 
-一个基于 [any-rule](https://github.com/any86/any-rule) 项目的 VSCode 插件，用于管理和验证正则表达式。
+一个VSCode 插件，用于管理和验证正则表达式。
 
 ## 功能特性
 
